@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Foto cewek akuuu</title>
+<style>
+  body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  align-items: center;
+  height: 100vh;
+}
+
+.my-gallery {
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-decoration: underline;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  max-width: 800px;
+  border: 1px solid #ccc;
+  padding: 16px;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.image-container {
+  flex: 1 1 calc(33.333% - 16px);
+  box-sizing: border-box;
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.image-container img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.image-container p {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px;
+}
+.button {
+            padding: 10px 20px;
+            font-size: 18px;
+            cursor: pointer;
+            margin: 50px;
+            font-family: 'courier';
+            margin-bottom: 20px;
+            background-color:#f4f4f4;
+            color: #000000;
+            border-radius: 20px;
+            border: 2px solid #b4afaf;
+            width: 90%;
+            
+           
+            
+            
+        }
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+  .image-container {
+    flex: 1 1 calc(50% - 16px); /* Mengatur agar ada 2 gambar per baris */
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    flex: 1 1 100%; /* Mengatur agar ada 1 gambar per baris */
+  }
+}
+
+</style>
+  </head>
+  <body>
+    <div class="my-gallery">
+      <p>ini dia cewek cantiknyaa</p>
+    </div>
+    <div class="gallery">
+      <div class="image-container">
+        <img src="gambar1.jpg" alt="Foto 1" />
+        <p></p>
+      </div>
+      <div class="image-container">
+        <img src="gambar2.jpg" alt="Foto 2" />
+        <p></p>
+      </div>
+      <div class="image-container">
+        <img src="gambar3.JPG" alt="Foto 3" />
+        <p></p>
+      </div>
+      <div class="image-container">
+        <img src="gambar4.jpg" alt="Foto 1" />
+        <p></p>
+      </div>
+      <div class="image-container">
+        <img src="gambar 5.jpg" alt="Foto 2" />
+        <p></p>
+      </div>
+      <div class="image-container">
+        <img src="gambar6.jpg" alt="Foto 3" />
+        <p></p>
+      </div>
+      <!-- Kamu bisa menambahkan lebih banyak gambar sesuai kebutuhan -->
+    </div>
+    <button class = "button" onclick="location.href='lastpage.html'">click ini aku punya sesuatu buat km</button>
+  </body>
+</html>
